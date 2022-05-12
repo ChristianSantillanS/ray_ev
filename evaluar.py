@@ -18,7 +18,7 @@ def div(a,b):
 @serve.deployment
 def evaluar(entrada):
     print(entrada.url.path)
-    op = entrada.url.parth.split("/")[-1]
+    op = entrada.url.path.split("/")[-1]
     return eval(op)
 evaluar.deploy()
 

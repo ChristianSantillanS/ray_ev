@@ -22,6 +22,8 @@ Para probar el servidor en consola:
 3. En una consola nueva correr el `prueba_async.py` que realiza la prueba asincrona
 4. Revisar utilizacion en el Ray Dashboard en ambos casos.
 
+**Para detener el archivo deploy.py** puedes teclear `Ctrl+C` para interrumpir la ejecucion.
+
 ### Notebook
 
 **TODO: Escribir esta seccion**

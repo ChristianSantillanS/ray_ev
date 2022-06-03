@@ -1,3 +1,4 @@
+import argparse
 import aiohttp
 import asyncio
 import requests
@@ -27,9 +28,21 @@ async def pruebadecarga_async(num_operaciones=20,complejidad=1):
                 deploy_url = await resp.json()
                 resultados.append(deploy_url)
                 operaciones.append(operacion)
-start_time = time.time()
 
-asyncio.run(pruebadecarga_async(num_operaciones=50, complejidad=1))
 
-print("-Tardo-- %s segundos ---" % (time.time() - start_time))
+parser = argparse.ArgumentParser(description="Prueba asincrona de carga en ray serve")
+parser.add_argument('operaciones', type=int, metavar='operaciones', nargs='?',
+        default=100)
+parser.add_argument('complejidad', type=int, metavar='complejidad', nargs='?',
+        default=1)
+
+
+# El siguiente chequeo revisa si el script esta corriendo en la consola.
+if __name__ == '__main__':
+    args = parser.parse_args()
+    start_time = time.time()
+    print('Corriendo %d operaciones de complejidad %d' % (args.operaciones, args.complejidad))
+    asyncio.run(pruebadecarga_async(num_operaciones=args.operaciones, complejidad=args.complejidad))
+
+    print("-Tardo-- %s segundos ---" % (time.time() - start_time))
 

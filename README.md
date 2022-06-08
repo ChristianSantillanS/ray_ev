@@ -40,5 +40,6 @@ Esto imprimira la documentacion de los parametros.
 **TODO: Escribir esta seccion**
 
 1. Inicializar el Notebook de Jupyer `jupyter notebook`
-2. Abrir `Deploy.ipynb`
-3. Ejecutamos `RUN ALL`.
+2. Abrir el Home Page en http://localhost:8888/
+3. Correr `Deploy.ipynb`
+4. Ejecutamos `RUN ALL`.

@@ -40,4 +40,5 @@ Esto imprimira la documentacion de los parametros.
 **TODO: Escribir esta seccion**
 
 1. Inicializar el Notebook de Jupyer (jupyter notebook)
-2. ???
+2. Abrir "Deploy.ipynb"
+3. Ejecutamos "RUN ALL".

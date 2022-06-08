@@ -39,5 +39,5 @@ Esto imprimira la documentacion de los parametros.
 
 **TODO: Escribir esta seccion**
 
-1. Inicializar el Notebook de Jupyer (comando?)
+1. Inicializar el Notebook de Jupyer (jupyter notebook)
 2. ???
